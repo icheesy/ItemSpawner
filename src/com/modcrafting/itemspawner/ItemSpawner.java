@@ -27,7 +27,7 @@ public class ItemSpawner extends JavaPlugin{
 			auth = true;		
 		}
 		if(!auth){
-			sender.sendMessage(ChatColor.RED+"You do not have the required permissions.");
+			sender.sendMessage(ChatColor.RED+"[CHEESIUM] No permissions noob!");
 			return true;
 		}
 		int mat = 0;
@@ -73,12 +73,12 @@ public class ItemSpawner extends JavaPlugin{
 			if(sender instanceof Player){
 				Player player = (Player) sender;
 				if(item!=null)player.getInventory().addItem(item);
-				player.sendMessage(ChatColor.BLUE+"Recieved Item:"+item.getType().toString()+" Qty:"+String.valueOf(qty));
+				player.sendMessage(ChatColor.YELLOW+"[CHEESIUM] Spawned "+String.valueOf(qty)+" of "+item.getType().toString());
 				return true;
 			}
 		}
 		if(blacklist.contains(mat)){
-			sender.sendMessage(ChatColor.RED+"This item is blacklisted!");
+			sender.sendMessage(ChatColor.RED+"[CHEESIUM] This item is blacklisted noob!");
 			return true;
 		}
 		return false;
