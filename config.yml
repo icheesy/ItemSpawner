@@ -1,0 +1,15 @@
+Item:
+#  tnt:
+#    id: 46
+#  lava:
+#    id: 10
+  stone:
+    id: 1
+  red:
+    id: 35
+    damage: 14
+BlackList:
+- 46
+- 10
+- 11
+    

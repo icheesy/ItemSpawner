@@ -1,0 +1,19 @@
+name: ItemSpawner
+main: com.modcrafting.itemspawner.ItemSpawner
+version: 0.1
+website: http://modcrafting.com
+author: Deathmarine
+description: >
+             Give Plugin for Bukkit.
+commands:
+  item:
+    description: Gives Items to Players
+    usage: /<command> {id/alias} [qty]
+permissions:
+  itemspawner.*:
+    description: Allows the Administration to Full Control
+    children:
+      itemspawner.command: true
+  itemspawner.command:
+    default: op
+    description: Allows player to use command
