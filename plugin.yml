@@ -9,6 +9,7 @@ commands:
   item:
     description: Gives Items to Players
     usage: /<command> {id/alias} [qty]
+    alias: [i]
 permissions:
   itemspawner.*:
     description: Allows the Administration to Full Control
