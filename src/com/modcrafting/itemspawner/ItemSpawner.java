@@ -61,7 +61,6 @@ public class ItemSpawner extends JavaPlugin{
 		}
 		YamlConfiguration config = (YamlConfiguration) this.getConfig();
 		if(alias!=null) mat = config.getInt("Item."+alias+".id", 0);
-		if(alias!=null) dam = config.getInt("Item."+alias+".damage", 0);
 		List<Integer> blacklist = config.getIntegerList("BlackList");
 		if(mat!=0&&!blacklist.contains(mat)){
 			ItemStack item = null;
